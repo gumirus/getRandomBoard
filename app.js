@@ -87,3 +87,16 @@ function setColor(element) {
   const color = getRandomColor();
   element.style.boxShadow = `0 0 25px ${color}, 0 0 30px ${color}`;
 }
+
+
+//bonus
+
+function winTheGame() {
+  function kill() {
+    const circle = document.querySelector(".circle");
+    if (circle) {
+      circle.click();
+    }
+  }
+  setInterval(kill, 45);
+}
